@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardview_dark_background"
+    android:orientation="vertical"
+    tools:context=".MenuActivity">
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Redacción"
+        android:textSize="40sp"
+        android:textColor="@color/white" />
+
+    <EditText
+        android:id="@+id/asunto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titulo"
+        android:hint="Aquí va el asunto del mensaje"
+        android:textAllCaps="true"
+        android:layout_marginTop="40dp"/>
+
+    <EditText
+        android:id="@+id/mensaje"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/asunto"
+        android:hint="Coloca aqui tu mensaje"
+        android:layout_marginTop="40dp"/>
+
+    <Button
+        android:id="@+id/botonEnviar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mensaje"
+        android:layout_centerHorizontal="true"
+        android:onClick="enviarMensaje"
+        android:text="Enviar mensaje"
+        android:layout_marginTop="40dp"/>
+
+
+</RelativeLayout>

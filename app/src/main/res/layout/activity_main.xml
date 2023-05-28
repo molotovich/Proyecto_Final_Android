@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/cardview_dark_background">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="306dp"
+        android:layout_height="354dp"
+        android:src="@drawable/idea"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/organizador_digital_3000"
+        android:textColor="@color/white"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/logo"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:text="@string/_2023_fernando_carmona"
+        android:textColor="@color/white"
+        />
+
+    <Button
+        android:id="@+id/button_acceso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="90dp"
+        android:text="@string/entrar_a_la_app"
+        android:onClick="createMenu"
+        />
+
+</RelativeLayout>
